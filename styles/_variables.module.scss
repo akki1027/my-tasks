@@ -1,0 +1,38 @@
+// フォント
+$font-stack: Helvetica, sans-serif;
+// テキストカラー
+$text--primary-dark-color: #4b4a4a;
+$text--secondary-dark-color: #6c757c;
+$text--primary-light-color: #e8edf1;
+$text-red-color: #c72230;
+// 背景色
+$background-primary-color: #FFFFFF;
+$background-secondary-color: #f8f9fa;
+// ボタンカラー
+$btn--secondary-color:#26B95F;
+$btn--danger-color: #F25A5A;
+$btn--light-color: #ebeef0;
+// ボーダーカラー
+$border--light-color: #e2e2e2;
+// ボックスシャドーカラー
+$box-shadow-color: #0e0e0e26;
+// レスポンシブ
+$lg: 992px;
+$md: 768px;
+$sm: 480px;
+
+@mixin lg {
+    @media (max-width: ($lg)) {
+        @content;
+    }
+}
+@mixin md {
+    @media (max-width: ($md)) {
+        @content;
+    }
+}
+@mixin sm {
+    @media (max-width: ($sm)) {
+        @content;
+    }
+}
