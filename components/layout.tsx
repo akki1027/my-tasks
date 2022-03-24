@@ -1,7 +1,7 @@
 // 全てのページでシェアされる
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
 import Link from 'next/link'
 import styles from './layout.module.scss'
 
@@ -32,8 +32,7 @@ const Layout: NextPage<Props> = ({ children, home }: Props) => {
                     <>
                         <Link href="/">
                             <a>
-                                <Image
-                                    priority
+                                <img
                                     src="/vercel.svg"
                                     height={54}
                                     width={54}
@@ -47,8 +46,7 @@ const Layout: NextPage<Props> = ({ children, home }: Props) => {
                     <>
                         <Link href="/">
                             <a>
-                                <Image
-                                    priority
+                                <img
                                     src="/vercel.svg"
                                     height={54}
                                     width={54}
